@@ -25,6 +25,7 @@ public class User
 		this.password = password;
 	}
 
+	@Override
 	  public String toString()
 	  {
 	    return toStringHelper(this).addValue(firstName)
@@ -34,9 +35,9 @@ public class User
 	                               .toString();
 	  }
 
-	@Override
-	public int hashCode()
-	{
-		return Objects.hashCode(this.lastName, this.firstName, this.email, this.password);
-	}
+	  @Override  
+	  public int hashCode()  
+	  {  
+	     return Objects.hashCode(this.lastName, this.firstName, this.email, this.password);  
+	  }  
 }
